@@ -32,7 +32,7 @@ namespace WebApp.Strategy.Controllers
                 settings.DatabaseType = settings.GetDefaultDatabaseType;
             }
 
-             return View(settings);
+            return View(settings);
         }
 
         public async Task<IActionResult> ChangeDatabase(int databaseType)

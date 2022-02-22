@@ -17,7 +17,7 @@ namespace WebApp.Strategy.Repositories
             // 1 => _appIdentityDbContext.Entry(product).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
             // 2 => _appIdentityDbContext.Remove(product);
 
-            _appIdentityDbContext.Remove(product); 
+            _appIdentityDbContext.Remove(product);
 
             await _appIdentityDbContext.SaveChangesAsync();
         }
