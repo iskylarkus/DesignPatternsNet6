@@ -13,6 +13,8 @@ builder.Services.AddControllersWithViews();
 // definition on compile time
 // builder.Services.AddScoped<IProductRepository, ProductRepositoryFromSqlServer>();
 
+
+
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddScoped<IProductRepository>(sp =>
@@ -34,6 +36,7 @@ builder.Services.AddScoped<IProductRepository>(sp =>
         _ => throw new global::System.NotImplementedException()
     };
 });
+
 
 
 builder.Services.AddDbContext<AppIdentityDbContext>(options =>
