@@ -1,5 +1,4 @@
-﻿using BaseIdentity.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using WebApp.Strategy.Models;
 
 namespace WebApp.Strategy.Repositories
