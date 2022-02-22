@@ -1,11 +1,17 @@
 using BaseIdentity.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using WebApp.Strategy.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+
+// definition on compile time
+// builder.Services.AddScoped<IProductRepository, ProductRepositoryFromSqlServer>();
 
 
 
