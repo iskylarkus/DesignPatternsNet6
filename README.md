@@ -8,5 +8,5 @@
 - Compile Time esnasında klasik IoC DI container ile yapılanını dinamik şekilde Run Time esnasında yapılır.
 
 ### Template Desing Patters
-- Algoritmaları kapsüllememize imkan verir.
-- Bir algoritmanın iskeleti tanımlanır ve bu iskeletin bazı adımlarının subclass'lar tarafından oluşturulmasına imkan tanır.
+- Algoritmaları kapsüllememize soyutlamamıza imkan verir.
+- Bir algoritmanın iskeleti tanımlanır ve bu iskeletin bazı adımlarının subclass'lar tarafından oluşturulması sağlanır.
