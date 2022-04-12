@@ -1,8 +1,8 @@
-﻿using BaseIdentity.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApp.Command.Models;
 
-namespace BaseIdentity.Controllers
+namespace WebApp.Command.Controllers
 {
     public class HomeController : Controller
     {

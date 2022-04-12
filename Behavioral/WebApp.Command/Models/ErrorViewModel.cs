@@ -1,4 +1,4 @@
-namespace BaseIdentity.Models
+namespace WebApp.Command.Models
 {
     public class ErrorViewModel
     {

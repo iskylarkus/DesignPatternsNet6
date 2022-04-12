@@ -1,8 +1,8 @@
-﻿using BaseIdentity.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using WebApp.Command.Models;
 
-namespace BaseIdentity.Controllers
+namespace WebApp.Command.Controllers
 {
     public class AccountController : Controller
     {

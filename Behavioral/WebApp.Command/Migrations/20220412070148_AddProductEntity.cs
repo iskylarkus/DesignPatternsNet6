@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace BaseIdentity.Migrations
+namespace WebApp.Command.Migrations
 {
     public partial class AddProductEntity : Migration
     {
