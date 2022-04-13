@@ -79,7 +79,7 @@ namespace WebApp.Command.Commands
 
             var converter = _context.RequestServices.GetRequiredService<IConverter>();
 
-            return new(converter.Convert(doc)),
+            return new(converter.Convert(doc));
         }
     }
 }
