@@ -9,5 +9,7 @@ namespace WebApp.Observer.Models
         {
 
         }
+
+        public DbSet<Discount> Discounts { get; set; }
     }
 }
