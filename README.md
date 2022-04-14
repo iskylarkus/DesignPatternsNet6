@@ -13,3 +13,8 @@
 
 ### Command Desing Pattern
 - Method çağırma işlemini kapsüller.
+
+### Observer Desing Pattern
+- Objeler arasında bire-çok bir ilişki tanımlanır.
+- Bir objenin durumu değiştiğinde, bütün ilişkili olduğu objeler bilgilendirilir.
+- Loosely coupled
