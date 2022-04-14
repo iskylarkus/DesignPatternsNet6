@@ -45,7 +45,7 @@ namespace WebApp.Command.Commands
                 var values = type.GetProperties().Select(propertyInfo => propertyInfo.GetValue(x, null)).ToArray();
 
                 table.Rows.Add(values);
-            }) ;
+            });
 
             return table;
         }

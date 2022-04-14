@@ -55,7 +55,7 @@ namespace WebApp.Command.Commands
             });
 
             sb.Append("</table></body></html>");
-            
+
             var doc = new HtmlToPdfDocument()
             {
                 GlobalSettings = {
