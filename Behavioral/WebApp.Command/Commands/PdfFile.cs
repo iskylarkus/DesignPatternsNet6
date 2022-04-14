@@ -15,7 +15,7 @@ namespace WebApp.Command.Commands
             _context = context;
         }
 
-        public string FileName => $"{typeof(T).FullName}.pdf";
+        public string FileName => $"{typeof(T).Name}.pdf";
         public string FileType => "application/octet-stream";
 
         public MemoryStream Create()
@@ -28,7 +28,7 @@ namespace WebApp.Command.Commands
 <html>
     <head></head>
     <body>
-    <div> class='text-center'>
+    <div class='text-center'>
         <h1>{type.Name} tablo</h1>
     </div>
     <table class='table table-striped' align='center'>

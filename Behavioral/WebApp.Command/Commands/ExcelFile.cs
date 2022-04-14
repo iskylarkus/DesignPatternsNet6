@@ -7,7 +7,7 @@ namespace WebApp.Command.Commands
     {
         public readonly List<T> _list;
 
-        public string FileName => $"{typeof(T).FullName}.xlsx";
+        public string FileName => $"{typeof(T).Name}.xlsx";
         public string FileType => "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
 
         public ExcelFile(List<T> list)
