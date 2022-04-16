@@ -17,7 +17,7 @@ builder.Services.AddSingleton<UserObserverSubject>(sp =>
     userObserverSubject.RegisterObserver(new UserObserverWriteToConsole(sp));
 
     userObserverSubject.RegisterObserver(new UserObserverCreateDiscount(sp));
-    
+
     userObserverSubject.RegisterObserver(new UserObserverSendEmail(sp));
 
     return userObserverSubject;

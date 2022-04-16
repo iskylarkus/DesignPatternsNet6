@@ -1,6 +1,6 @@
-﻿using WebApp.Observer.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using WebApp.Observer.Models;
 using WebApp.Observer.Observers;
 
 namespace WebApp.Observer.Controllers

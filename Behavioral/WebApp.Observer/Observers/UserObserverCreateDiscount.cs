@@ -15,7 +15,7 @@ namespace WebApp.Observer.Observers
         {
             var logger = _serviceProvider.GetRequiredService<ILogger<UserObserverCreateDiscount>>();
 
-            
+
 
             //var context = _serviceProvider.GetRequiredService<AppIdentityDbContext>();
 

@@ -1,6 +1,6 @@
-﻿using WebApp.Observer.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApp.Observer.Models;
 
 namespace WebApp.Observer.Controllers
 {

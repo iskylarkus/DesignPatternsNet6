@@ -17,7 +17,7 @@ namespace WebApp.Observer.Observers
         {
             var logger = _serviceProvider.GetRequiredService<ILogger<UserObserverSendEmail>>();
 
-            
+
             var mailMessage = new MailMessage();
 
             mailMessage.From = new MailAddress("from@domain.com");
@@ -30,7 +30,7 @@ namespace WebApp.Observer.Observers
 
             mailMessage.IsBodyHtml = true;
 
-            
+
             var smtpClient = new SmtpClient("smtp.domain.com");
 
             smtpClient.Port = 587;
