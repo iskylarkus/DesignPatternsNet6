@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Command", "Behavioral\WebApp.Command\WebApp.Command.csproj", "{7CF2992A-E7A4-4BCA-BA32-AE24864AC041}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.Observer", "Behavioral\WebApp.Observer\WebApp.Observer.csproj", "{312F0722-FF1E-4081-9D64-0A3A88BC9A36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7CF2992A-E7A4-4BCA-BA32-AE24864AC041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CF2992A-E7A4-4BCA-BA32-AE24864AC041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CF2992A-E7A4-4BCA-BA32-AE24864AC041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312F0722-FF1E-4081-9D64-0A3A88BC9A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312F0722-FF1E-4081-9D64-0A3A88BC9A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312F0722-FF1E-4081-9D64-0A3A88BC9A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312F0722-FF1E-4081-9D64-0A3A88BC9A36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{4C75E154-47E7-43A4-866D-B6F18644DEB6} = {E97C3508-BFFA-4A12-9F3E-356F845FE536}
 		{067D4C85-0C67-4E16-91FE-A236FA4515BB} = {E97C3508-BFFA-4A12-9F3E-356F845FE536}
 		{7CF2992A-E7A4-4BCA-BA32-AE24864AC041} = {E97C3508-BFFA-4A12-9F3E-356F845FE536}
+		{312F0722-FF1E-4081-9D64-0A3A88BC9A36} = {E97C3508-BFFA-4A12-9F3E-356F845FE536}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A69C2DA-813E-4320-929F-9CFBB2073465}
