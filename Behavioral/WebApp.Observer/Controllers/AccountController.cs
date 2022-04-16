@@ -9,6 +9,34 @@ namespace WebApp.Observer.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
 
+        public IActionResult SignUp()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SignUp(UserCreateViewModel userCreateViewModel)
+        {
+            var appUser = new AppUser() { UserName = userCreateViewModel.UserName, Email = userCreateViewModel.Email };
+
+            var identityResult = await _userManager.CreateAsync(appUser, userCreateViewModel.Password);
+
+            if (identityResult.Succeeded)
+            {
+                // To Do
+
+                ViewBag.message = "Üyelik işlemi başarıyla gerçekleşti.";
+            }
+            else
+            {
+                ViewBag.message = identityResult.Errors.ToList().First().Description;
+            }
+
+            return View();
+        }
+
+
+
         public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
