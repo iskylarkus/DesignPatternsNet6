@@ -1,8 +1,8 @@
-﻿using WebApp.Template.Models;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
+using WebApp.Template.Models;
 
 namespace WebApp.Template.Controllers
 {

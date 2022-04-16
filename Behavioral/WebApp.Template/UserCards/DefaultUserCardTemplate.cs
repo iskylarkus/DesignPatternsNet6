@@ -1,6 +1,4 @@
-﻿using WebApp.Template.Models;
-
-namespace WebApp.Template.UserCards
+﻿namespace WebApp.Template.UserCards
 {
     public class DefaultUserCardTemplate : UserCardTemplate
     {

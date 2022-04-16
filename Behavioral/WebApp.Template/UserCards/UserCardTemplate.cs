@@ -19,7 +19,7 @@ namespace WebApp.Template.UserCards
             var sb = new StringBuilder();
 
             sb.Append("<div class='card'>");
-            
+
             sb.Append(SetPicture());
 
             sb.Append($@"<div class='card-body'>

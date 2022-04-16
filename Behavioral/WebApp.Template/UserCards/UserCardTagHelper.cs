@@ -3,7 +3,7 @@ using WebApp.Template.Models;
 
 namespace WebApp.Template.UserCards
 {
-    public class UserCardTagHelper:TagHelper
+    public class UserCardTagHelper : TagHelper
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
         public AppUser AppUser { get; set; }

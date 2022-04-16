@@ -1,6 +1,6 @@
-﻿using WebApp.Template.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using WebApp.Template.Models;
 
 namespace WebApp.Template.Controllers
 {
