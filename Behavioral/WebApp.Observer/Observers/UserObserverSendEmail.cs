@@ -22,7 +22,7 @@ namespace WebApp.Observer.Observers
 
             mailMessage.From = new MailAddress("from@domain.com");
 
-            mailMessage.To.Add(new MailAddress("to@domain.com"));
+            mailMessage.To.Add(new MailAddress(appUser.Email));
 
             mailMessage.Subject = "Hoşgeldiniz";
 

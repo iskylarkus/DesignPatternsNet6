@@ -1,6 +1,7 @@
 ﻿using WebApp.Observer.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using WebApp.Observer.Observers;
 
 namespace WebApp.Observer.Controllers
 {
@@ -8,6 +9,16 @@ namespace WebApp.Observer.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserObserverSubject _userObserverSubject;
+
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, UserObserverSubject userObserverSubject)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _userObserverSubject = userObserverSubject;
+        }
+
+
 
         public IActionResult SignUp()
         {
@@ -23,7 +34,7 @@ namespace WebApp.Observer.Controllers
 
             if (identityResult.Succeeded)
             {
-                // To Do
+                _userObserverSubject.NotifyObservers(appUser);
 
                 ViewBag.message = "Üyelik işlemi başarıyla gerçekleşti.";
             }
@@ -36,12 +47,6 @@ namespace WebApp.Observer.Controllers
         }
 
 
-
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-        }
 
         public IActionResult Login()
         {
