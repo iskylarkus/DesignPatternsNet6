@@ -25,8 +25,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="SignUp">SignUp</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav flex-grow-1">
+                        <li>
                         @if (User.Identity.IsAuthenticated)
                         {
                             <a asp-controller="Account" asp-action="Logout" class="nav-link text-dark">@User.Identity.Name (Çıkış yap)</a>
@@ -35,6 +39,7 @@
                         {
                             <a asp-controller="Account" asp-action="Login" class="nav-link text-dark">Giriş yap</a>
                         }
+                        </li>
                     </ul>
                 </div>
             </div>
