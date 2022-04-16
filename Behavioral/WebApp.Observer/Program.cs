@@ -1,11 +1,27 @@
-using WebApp.Observer.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using WebApp.Observer.Models;
+using WebApp.Observer.Observers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+
+builder.Services.AddSingleton<UserObserverSubject>(sp =>
+{
+    UserObserverSubject userObserverSubject = new();
+
+    userObserverSubject.RegisterObserver(new UserObserverWriteToConsole(sp));
+
+    userObserverSubject.RegisterObserver(new UserObserverCreateDiscount(sp));
+    
+    userObserverSubject.RegisterObserver(new UserObserverSendEmail(sp));
+
+    return userObserverSubject;
+});
 
 
 

@@ -4,6 +4,6 @@ namespace WebApp.Observer.Observers
 {
     public interface IUserObserver
     {
-        void CreateUser(AppUser appUser);
+        void UserCreated(AppUser appUser);
     }
 }
