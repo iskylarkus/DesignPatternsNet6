@@ -18,3 +18,7 @@
 - Objeler arasında bire-çok bir ilişki tanımlanır.
 - Bir objenin durumu değiştiğinde, bütün ilişkili olduğu objeler bilgilendirilir.
 - Loosely coupled
+
+### Chain of Responsibility Desing Pattern
+- Sorumluluk zinciri oluşturur.
+- Birbirini takip eden işleri ya handle eder yada zincirdeki bir sonraki halkaya gönderir.
