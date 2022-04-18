@@ -9,5 +9,7 @@ namespace WebApp.ChainOfResponsibility.Models
         {
 
         }
+
+        public DbSet<Product> Products { get; set; }
     }
 }
