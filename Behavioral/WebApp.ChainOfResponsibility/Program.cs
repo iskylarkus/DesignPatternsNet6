@@ -62,6 +62,16 @@ using (var scope = app.Services.CreateScope())
         userManager.CreateAsync(new AppUser() { UserName = "user4", Email = "user4@hotmail.com" }, "Password12*").Wait();
         userManager.CreateAsync(new AppUser() { UserName = "user5", Email = "user5@hotmail.com" }, "Password12*").Wait();
     }
+
+    if (!identityDbContext.Products.Any())
+    {
+        Enumerable.Range(1, 30).ToList().ForEach(x =>
+        {
+            identityDbContext.Products.Add(new Product() { Name = $"Kalem {x}", Price = x * 19, Stock = x * 11 });
+        });
+
+        identityDbContext.SaveChanges();
+    }
 }
 
 
