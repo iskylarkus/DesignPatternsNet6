@@ -4,7 +4,7 @@ using System.Net.Mime;
 
 namespace WebApp.ChainOfResponsibility.ChainOfResponsibility
 {
-    public class EmailProcessHandler:ProcessHandler
+    public class EmailProcessHandler : ProcessHandler
     {
         private readonly string _fileName;
         private readonly string _mailTo;

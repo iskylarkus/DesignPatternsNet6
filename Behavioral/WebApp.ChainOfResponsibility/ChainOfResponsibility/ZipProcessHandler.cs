@@ -2,7 +2,7 @@
 
 namespace WebApp.ChainOfResponsibility.ChainOfResponsibility
 {
-    public class ZipProcessHandler<T>:ProcessHandler
+    public class ZipProcessHandler<T> : ProcessHandler
     {
         public override object handle(object o)
         {

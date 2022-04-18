@@ -1,6 +1,6 @@
-﻿using WebApp.ChainOfResponsibility.Models;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using WebApp.ChainOfResponsibility.Models;
 
 namespace WebApp.ChainOfResponsibility.Controllers
 {

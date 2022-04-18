@@ -3,7 +3,7 @@
     public abstract class ProcessHandler : IProcessHandler
     {
         private IProcessHandler nextProcessHandler;
-        
+
         public virtual object handle(object o)
         {
             if (nextProcessHandler != null)

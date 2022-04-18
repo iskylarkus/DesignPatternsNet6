@@ -1,6 +1,6 @@
-using WebApp.ChainOfResponsibility.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using WebApp.ChainOfResponsibility.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
